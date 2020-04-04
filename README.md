@@ -21,3 +21,9 @@ python3 -c 'import tensorflow as tf; print(tf.__version__)'  # for Python 3
 The syntax.py file is a script with basic tensorflow computations and operations. 
 Ths conda environment for this repo was built with tensorflow v2, but this script ustilise command syntax from v1. 
 You can switch between the two, check the headers at the top of the script for information on how. 
+
+![graphs](https://github-jackalack117.s3-ap-southeast-2.amazonaws.com/nodegraph.PNG)
+
+Graphs.py produces the above default graph. 
+n1 + n2 are two constant nodes, 1 & 2.
+n3 is an operation node taking n1 & n2 as inputs and outputting an addition operation.
