@@ -1,4 +1,5 @@
-
+import tensorflow as tf
+from tensorflow import keras
 
 """
 
@@ -18,8 +19,9 @@ A filter is simply a set of multiplyers.
 model = tf.keras.models.Sequential([  
     tf.keras.layers.Conv2D(64, (3, 3), activation='relu',   # Generates 64 filters, multiplying each of them acorss the image.
                            input_shape=(28, 28, 1)),
-    tf.kerad.layers.MaxPooling2D(2, 2),
+    tf.keras.layers.MaxPooling2D(2, 2),
     tf.keras.layers.Flatten(),  # Dont specify an input shape, instead put a convolutional layer on top of it like above ^
     tf.keras.layers.Dense(128, activation=tf.nn.relu),
     tf.keras.layers.Dense(10, activation=tf.nn.softmax)
 ])
+

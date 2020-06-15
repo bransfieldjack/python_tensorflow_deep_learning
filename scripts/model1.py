@@ -62,7 +62,7 @@ with tf.Session() as sess:
 
 
 """
-An exampl eneural network (graph wx + b = z) : 
+An example eneural network (graph wx + b = z) : 
 """
 
 n_features = 10

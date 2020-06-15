@@ -93,11 +93,11 @@ model.compile(optimizer=tf.train.AdamOptimizer(),
         
 """
 Training then becomes simple. 
-Fir the training images to the training labels. 
+Fit the training images to the training labels. 
 Below is an example of this for 5 epochs:
 """
 
-model.fit(train_images, train_labels, epochs=5)
+model.fit(train_images, train_labels, epochs=50)
 
 
 """
